@@ -18,7 +18,7 @@ div.wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #0170ad;
+  background-color: #000;
 }
 
 @media (max-width: 768px) {

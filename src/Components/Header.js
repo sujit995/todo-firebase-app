@@ -50,7 +50,7 @@ export const Header = ({currentUser}) => {
                     <Link className='btn btn-primary btn-md' to="signup">
                      SIGN UP
                     </Link>
-                    <Link className='btn btn-secondary btn-md' to="login">
+                    <Link className='btn btn-success btn-md' to="login">
                         LOGIN
                     </Link>
 

@@ -19,14 +19,7 @@ const Login = (props) => {
         }).catch(err => setLoginError(err.message))
     }
 
-    // const forgotPassword = (Email) => {
-    //     auth.sendPasswordResetEmail(Email)
-    //         .then(function () {
-    //             alert('Please check your email...')
-    //         }).catch(function (e) {
-    //             console.log(e)
-    //         })
-    // }
+
 
     return (
         <div className='form-wrapper'>
@@ -52,15 +45,13 @@ const Login = (props) => {
                         </div>
 
                         <button type="submit" className="btn btn-primary btn-block mt-4 mb-4">Submit</button>
-                        {/* <p className="forgot-password text-right mt-2">
-                            Forgot <a href="" onClick={() => forgotPassword(toString(profile.email))}>password?</a>
-                        </p> */}
+
                     </form>
                     <span>Don't have an account? Create One
                         <Link to="signup"> here</Link></span>
-                    {loginError && <div className='error-msg'>
+                    <div className='error-msg'>
                         {loginError}
-                    </div>}
+                    </div>
                 </div>
             </div>
         </div>

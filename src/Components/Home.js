@@ -32,7 +32,7 @@ export const Home = ({ currentUser, todos, deleteTodo,
       <div className='container'>
         <form autoComplete='off' className='form-group'
           onSubmit={handleTodoSubmit}>
-
+          <h3>Add Your Todos Here</h3>
           {currentUser && <>
             <input type="text" placeholder="Enter TODO's"
               className='form-control' required
@@ -45,7 +45,7 @@ export const Home = ({ currentUser, todos, deleteTodo,
               width: 100 + '%',
               display: 'flex', justifyContent: 'flex-end'
             }}>
-              <button type="submit" className='btn btn-success'
+              <button type="submit" className='btn btn-primary'
                 style={{ width: 100 + '%' }}>
                 ADD
               </button>
@@ -62,7 +62,7 @@ export const Home = ({ currentUser, todos, deleteTodo,
               width: 100 + '%',
               display: 'flex', justifyContent: 'flex-end'
             }}>
-              <button type="submit" className='btn btn-success'
+              <button type="submit" className='btn btn-primary'
                 disabled style={{ width: 100 + '%' }}>
                 ADD
               </button>
